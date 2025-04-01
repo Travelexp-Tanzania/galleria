@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galleria Fotografica</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #004466;
+      font-family: sans-serif;
+    }
+    .gallery {
+      column-count: 3;
+      column-gap: 10px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      border-radius: 10px;
+      display: block;
+      break-inside: avoid;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    }
+    @media (max-width: 768px) {
+      .gallery {
+        column-count: 2;
+      }
+    }
+    @media (max-width: 480px) {
+      .gallery {
+        column-count: 1;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence1.jpg" alt="Residence1">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence2.jpg" alt="Residence2">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence3.jpg" alt="Residence3">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence4.jpg" alt="Residence4">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence5.jpg" alt="Residence5">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence6.jpg" alt="Residence6">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence7.jpg" alt="Residence7">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence9.jpg" alt="Residence9">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence10.jpg" alt="Residence10">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence11.jpg" alt="Residence11">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence12.jpg" alt="Residence12">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence13.jpg" alt="Residence13">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence14.jpg" alt="Residence14">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence15.jpg" alt="Residence15">
+    <img src="https://raw.githubusercontent.com/Travelexp-Tanzania/galleria/main/img/Residence16.jpg" alt="Residence16">
+  </div>
+</body>
+</html>
