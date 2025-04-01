@@ -11,20 +11,28 @@
       font-family: sans-serif;
     }
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 10px;
+      column-count: 3;
+      column-gap: 10px;
       padding: 20px;
     }
     .gallery img {
       width: 100%;
       height: auto;
+      margin-bottom: 10px;
       border-radius: 10px;
-      transition: transform 0.3s;
-      cursor: pointer;
+      display: block;
+      break-inside: avoid;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
     }
-    .gallery img:hover {
-      transform: scale(1.05);
+    @media (max-width: 768px) {
+      .gallery {
+        column-count: 2;
+      }
+    }
+    @media (max-width: 480px) {
+      .gallery {
+        column-count: 1;
+      }
     }
   </style>
 </head>
