@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galleria Fotografica</title>
+  <style>
+    body {
+      margin: 0;
+      background-color: #000;
+      font-family: sans-serif;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 10px;
+      padding: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <div class="gallery">
+    <img src="https://i.imgur.com/9MyaIbU.jpg" alt="Foto 1">
+    <img src="https://i.imgur.com/3ZhlnRy.jpg" alt="Foto 2">
+    <img src="https://i.imgur.com/g8r0AfN.jpg" alt="Foto 3">
+    <img src="https://i.imgur.com/1hKo8Mb.jpg" alt="Foto 4">
+    <img src="https://i.imgur.com/5u4fw9j.jpg" alt="Foto 5">
+    <img src="https://i.imgur.com/vVqH93Y.jpg" alt="Foto 6">
+    <img src="https://i.imgur.com/nc3tO1q.jpg" alt="Foto 7">
+    <img src="https://i.imgur.com/vh4HK3Y.jpg" alt="Foto 8">
+    <img src="https://i.imgur.com/JoGFJgw.jpg" alt="Foto 9">
+    <img src="https://i.imgur.com/Sg5L9Rr.jpg" alt="Foto 10">
+    <img src="https://i.imgur.com/TdzgYWa.jpg" alt="Foto 11">
+    <img src="https://i.imgur.com/aqbBuYz.jpg" alt="Foto 12">
+    <img src="https://i.imgur.com/BOdN8eL.jpg" alt="Foto 13">
+    <img src="https://i.imgur.com/zT7VmAn.jpg" alt="Foto 14">
+    <img src="https://i.imgur.com/rP2xFlX.jpg" alt="Foto 15">
+  </div>
+</body>
+</html>
