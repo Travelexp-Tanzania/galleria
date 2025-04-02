@@ -6,33 +6,42 @@
   <title>Galleria Zanzibar Padel</title>
   <style>
     body {
+      background-color: #084b5f;
       margin: 0;
-      background-color: #08475e;
-      font-family: sans-serif;
+      padding: 20px;
+      font-family: Arial, sans-serif;
     }
 
     .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 15px;
-      padding: 30px;
+      column-count: 3;
+      column-gap: 15px;
     }
 
     .gallery img {
       width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
-      transition: transform 0.3s;
+      margin-bottom: 15px;
+      border-radius: 10px;
+      display: block;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+      break-inside: avoid;
     }
 
-    .gallery img:hover {
-      transform: scale(1.03);
+    @media (max-width: 800px) {
+      .gallery {
+        column-count: 2;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .gallery {
+        column-count: 1;
+      }
     }
   </style>
 </head>
 <body>
   <div class="gallery">
+    <img src="img-zanzibarpadel/zanzibar1.jpg" alt="zanzibar1">
     <img src="img-zanzibarpadel/zanzibar2.jpg" alt="zanzibar2">
     <img src="img-zanzibarpadel/zanzibar3.jpg" alt="zanzibar3">
     <img src="img-zanzibarpadel/zanzibar4.jpg" alt="zanzibar4">
