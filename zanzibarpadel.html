@@ -1,61 +1,49 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Galleria Zanzibar Padel</title>
   <style>
     body {
-      background-color: #084b5f;
       margin: 0;
-      padding: 20px;
-      font-family: Arial, sans-serif;
+      background-color: #084c61;
+      font-family: sans-serif;
     }
-
     .gallery {
-      column-count: 3;
-      column-gap: 15px;
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 15px;
+      padding: 20px;
     }
-
     .gallery img {
       width: 100%;
-      margin-bottom: 15px;
+      height: auto;
       border-radius: 10px;
-      display: block;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
-      break-inside: avoid;
+      transition: transform 0.3s ease;
     }
-
-    @media (max-width: 800px) {
-      .gallery {
-        column-count: 2;
-      }
-    }
-
-    @media (max-width: 500px) {
-      .gallery {
-        column-count: 1;
-      }
+    .gallery img:hover {
+      transform: scale(1.03);
     }
   </style>
 </head>
 <body>
   <div class="gallery">
-    <img src="img-zanzibarpadel/zanzibar1.jpg" alt="zanzibar1">
-    <img src="img-zanzibarpadel/zanzibar2.jpg" alt="zanzibar2">
-    <img src="img-zanzibarpadel/zanzibar3.jpg" alt="zanzibar3">
-    <img src="img-zanzibarpadel/zanzibar4.jpg" alt="zanzibar4">
-    <img src="img-zanzibarpadel/zanzibar5.jpg" alt="zanzibar5">
-    <img src="img-zanzibarpadel/zanzibar6.jpg" alt="zanzibar6">
-    <img src="img-zanzibarpadel/zanzibar7.jpg" alt="zanzibar7">
-    <img src="img-zanzibarpadel/zanzibar8.jpeg" alt="zanzibar8">
-    <img src="img-zanzibarpadel/zanzibar10.jpeg" alt="zanzibar10">
-    <img src="img-zanzibarpadel/zanzibar11.jpeg" alt="zanzibar11">
-    <img src="img-zanzibarpadel/zanzibar12.jpeg" alt="zanzibar12">
-    <img src="img-zanzibarpadel/zanzibar13.jpeg" alt="zanzibar13">
-    <img src="img-zanzibarpadel/zanzibar14.jpeg" alt="zanzibar14">
-    <img src="img-zanzibarpadel/zanzibar16.jpeg" alt="zanzibar16">
-    <img src="img-zanzibarpadel/zanzibar17.jpeg" alt="zanzibar17">
+    <img src="img-zanzibarpadel/zanzibar2.jpg" alt="zanzibar2" />
+    <img src="img-zanzibarpadel/zanzibar3.jpg" alt="zanzibar3" />
+    <img src="img-zanzibarpadel/zanzibar4.jpg" alt="zanzibar4" />
+    <img src="img-zanzibarpadel/zanzibar5.jpg" alt="zanzibar5" />
+    <img src="img-zanzibarpadel/zanzibar6.jpg" alt="zanzibar6" />
+    <img src="img-zanzibarpadel/zanzibar7.jpg" alt="zanzibar7" />
+    <img src="img-zanzibarpadel/zanzibar8.jpeg" alt="zanzibar8" />
+    <img src="img-zanzibarpadel/zanzibar10.jpeg" alt="zanzibar10" />
+    <img src="img-zanzibarpadel/zanzibar11.jpeg" alt="zanzibar11" />
+    <img src="img-zanzibarpadel/zanzibar12.jpeg" alt="zanzibar12" />
+    <img src="img-zanzibarpadel/zanzibar13.jpeg" alt="zanzibar13" />
+    <img src="img-zanzibarpadel/zanzibar14.jpeg" alt="zanzibar14" />
+    <img src="img-zanzibarpadel/zanzibar16.jpeg" alt="zanzibar16" />
+    <img src="img-zanzibarpadel/zanzibar17.jpeg" alt="zanzibar17" />
   </div>
 </body>
 </html>
